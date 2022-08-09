@@ -1,0 +1,59 @@
+
+</!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<body>
+	<script type="text/javascript">
+		var a;
+		console.log(typeof a);
+		a=10;
+		console.log(typeof a);
+		a='Datta';
+		console.log(typeof a);
+		//== and ===
+		console.log(10 =='10');
+		console.log(10 === '10');
+
+		//&&
+		
+		console.log(8==9 && 6==6);
+		console.log(8>=4 && 23);
+		x='' && 'Datta';
+		console.log(typeof x);
+
+		for (var i = 1; i <=10; i++) {
+			if (i%3 == 0) {
+				document.write(i+" ");
+			}
+		}
+		
+		var x=10;
+		
+		alert("Welcome");
+		var y = prompt("Enter Number");
+		var d= confirm('Do u want to continue');
+		var add = x+y;
+		var prod = x*y;
+		document.write("Addition: "+add+" Product: "+prod);
+		document.write(`\nAddition=${add}  Product=${prod}`);
+
+		document.write("<br>");
+		for (var ch = 65; ch <= 90; ch++) {
+			var c =  String.fromCharCode(ch);
+			document.write(c);
+			document.write("<br>");
+		}
+		var arr = [1,2,3,4,5,'Datta','Prasad'];
+		for (var i = arr.length - 1; i >= 0; i--) {
+			document.write (arr[i]+"<br>");
+
+		}
+		</script>
+</body>
+</body>
+</html>
