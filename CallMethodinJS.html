@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		
+		var e1 = {
+			"Id" : 101,
+			"Name" : "Datta",
+			"display" : function(a,b,c){
+				console.log(this);
+				document.write("ID : "+this.Id+" Name : "+this.Name+"  A:"+a+"  B:"+b+"  C:"+c+" <br>");
+			}
+		}
+
+		var d1 = e1.display;
+
+		var e2 = {"Id" : 102, "Name" : "Shubham"};
+		var e3 = {"Id" : 103, "Name" : "Akshay"};
+
+		e1.display(1,2,3);
+		var a= [21,22,23];
+		//d1.call(e2,...a);
+		d1.apply(e2,a);
+
+		var f1 = d1.bind(e2);
+		f1(11,12,13);
+
+		d1.call(e3,10,20,30);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

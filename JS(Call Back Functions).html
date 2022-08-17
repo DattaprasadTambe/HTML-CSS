@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		//document.write("Hii");
+		function greet(nm) {
+			document.write("Good morning "+nm);
+			return 10;
+		}
+		var x = greet;
+		x("DP");  
+		x("Datta");
+		var r = x("Tambe");
+		document.write(r);
+		document.write("<br>");
+		var y = function bye(nm){
+			document.write("Byee "+nm+"\r");
+		};
+		y("Tambe");
+		y("Raftaar");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+
+		function Stud(sid, sname, sper){
+			var ob = {};
+			ob.rollno = sid;
+			ob.studname = sname;
+			ob.percent = sper;
+			return ob;
+		}
+		var a = Stud(101,"Datta",95);
+		console.log(a);
+		
+		function Student(id, name, per) {
+			this.Id = id;
+			this.name = name;
+			this.per = per; 
+		}
+
+		Student.prototype.display = function(){
+			document.write("ID:"+this.Id+" Name:"+this.name+" Percentage: "+this.per+"<br>");
+		}
+
+		var ob1 = new Student(101,"Datta",95);
+		var ob2 = new Student(102,"Prasad",90);
+		var ob3 = new Student(103,"Tambe",85);
+
+		console.log(ob1);
+		console.log(ob2);
+		console.log(ob3);
+
+		ob1.display();
+		ob2.display();
+		ob3.display();
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var a=[1,2,3,4,5];
+		var[b,c,d,e,f] =a;
+		document.write(b+"<br>");
+		document.write(c+"<br>");
+		document.write(d+"<br>");
+		document.write(e+"<br>");
+		document.write(f+"<br>");
+
+
+		function add(... a) {
+			var sum = a.reduce((a,b) => a+b);
+			document.write("Sum of elements is: "+sum+"<br>");
+		}
+		function even(... a) {
+			var eve = a.filter((e)=>e%2==0);
+			document.write("<br>"+eve+"<br>");
+		}
+		add(1,2,3,4,5,6,7,8,9);
+		even(1,2,3,4,5,6,7,8,9);
+
+		function f1(a,b,c,d) {
+		 document.write("Sum: "+(a+b+c+d)+"<b>")
+		}
+
+		myarray = [11,12,13,14,15];
+		f1(...myarray);// spread operator
+	</script>
+</head>
+<body>
+
+</body>
+</html>

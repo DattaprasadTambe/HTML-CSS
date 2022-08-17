@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var a =[];
+		var b = {"S_Id":101,"S_name":"Datta","Percent":90};
+		var c = {"S_Id":102,"S_name":"Prasad","Percent":69};
+		
+		document.write(b.S_Id +" "+b.S_name+"  "+b.Percent);
+		document.write("<br>");
+		document.write("S_ID: "+b["S_Id"]+"<br>");
+		document.write("S_Name: "+b["S_name"]+"<br>");
+		document.write("Percentage: "+b["Percent"]+"<br>");
+
+		b.City = "Kankavli";
+		b["Mobile"] = 94864859084;
+		b["S_name"] = "Dattaprasad";
+		console.log(b);
+		delete b.S_name;
+		console.log(b);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

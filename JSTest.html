@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		
+		function getLength(nm) {
+			// body...
+			var arr = nm.split('');
+			var count=0;
+			for(var i=0; i<arr.Length; i++){
+				count++;
+				document.write(count);
+			}
+			document.write(count);
+			return count;
+		}
+
+		var name = window.prompt("enter your name: ");
+		var len = getLength(name);
+		document.write(len);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

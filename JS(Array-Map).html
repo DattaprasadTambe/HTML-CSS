@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		
+		function cube(a) {
+			return a*a*a;
+		}
+		var a = [1,2,3,4,5];
+		var a1= a.map(cube);
+		var a2 = a.map(c=> c*c*c);
+		document.write(a);
+		document.write("<br>");
+		document.write(a1);
+		document.write("<br>");
+		document.write(a2);
+		document.write("<br>");
+
+		var a3 = a.filter((e)=>e%2==0);
+		document.write(a3);
+		document.write("<br>");
+		var arr = ["Datta","Akshay","Shubham","Rehan",'Harshad'];
+		document.write(arr);
+		document.write("<br>");
+		arr.sort();
+		document.write(arr);
+		document.write("<br>");
+		arr.reverse();
+		document.write(arr);
+		document.write("<br>");
+
+		var nums = [23,2,456,8,4,543,34];
+		document.write(nums);
+		document.write("<br>");
+		nums.sort((a,b)=>a-b);
+		document.write(nums);
+		document.write("<br>");
+
+		nums.forEach(ele => document.write(ele));
+		document.write("<br>");
+		for(var d of nums){
+			document.write("  &"+d);
+		}
+		document.write("<br>");
+		var red =[1,2,3,4,5];
+		var fact = red.reduce((a,b)=>a*b);
+		var sum = red.reduce((a,b)=>a+b);
+		document.write("Sum of array elements = "+sum+"<br>Factorial:"+fact);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
