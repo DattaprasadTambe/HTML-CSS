@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		
+		var num = 100;
+
+		// == checks the value irrespective of datatype
+		if(num == '100'){
+			document.write("Both are equal<br>");
+		}
+		else{
+			document.write("Both are not equal<br>");
+		}
+
+		// === checks the value and also the datatype
+		if(num === '100'){
+			document.write("Both are equal<br>");
+		}
+		else{
+			document.write("Both are not equal<br>");
+		}
+
+		// var :  The scope of the var keyword is the global or function scope. It means variables defined outside the function can be accessed globally, and variables defined inside a particular function can be accessed within the function. 
+
+    	var a = 10;
+        function fa(){
+            document.write(a);
+            document.write("<br>");
+        }
+    	fa();
+    	document.write(a);
+    	document.write("<br>");
+
+
+    	// let : The scope of a let variable is only block scoped. It can’t be accessible outside the particular block.
+		let b = 10;
+  		if (true) {
+    		let b=9;
+    		document.write(b);
+    		document.write("<br>");
+  		}
+ 		document.write(b);
+ 		document.write("<br>");
+
+ 		// const : The const keyword has all the properties that are the same as the let keyword, except the user cannot update it.
+	    const c = 10;
+    	function fc() {
+        	c = 9;
+        	document.write(c);
+        	document.write("<br>");
+    	}
+    	fc();
+    	document.write("<br>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>
