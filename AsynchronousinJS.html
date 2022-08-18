@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function greet() {
+			alert("Good Morning..........");
+		}
+
+		function inter() {
+			alert("Hiiii.... I will see in 2 sec...");
+		}
+
+		setTimeout(greet, 1000);
+		document.write("Welcome..");
+		document.write("<br>Sum: "+(10*2));
+
+
+
+		var interid = setInterval(inter, 4000);
+		document.write("<br>"+"Its after interval..")
+
+		function stop(){
+			clearInterval(interid);
+			document.write("Interval is stopped...");
+		}
+		
+
+	</script>
+</head>
+<body>
+	Click to stop the interval<input type = "Button" value = "Stop Interval" onclick="stop()">
+</body>
+</html>
